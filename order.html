@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order — Family Bakery Studio</title>
+  <meta name="description" content="Order cakes, pastries, and catering online. Choose pickup or delivery and submit your event details." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
+        <span class="brand-mark" aria-hidden="true">🍰</span>
+        <span class="brand-text">
+          <span class="brand-name">Family Bakery Studio</span>
+          <span class="brand-tag">Cakes • Pastries • Catering</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu" data-nav-menu>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="cakes.html" class="nav-link">Cakes</a>
+          <a href="pastries.html" class="nav-link">Pastries & Snacks</a>
+          <a href="platters.html" class="nav-link">Catering Platters</a>
+          <a href="order.html" class="nav-link is-active">Order</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-ghost" href="#cart" aria-label="View cart">
+          <span aria-hidden="true">🧺</span>
+          <span>Cart</span>
+          <span class="badge" data-cart-count>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Order</h1>
+        <p class="lead">Review your cart, select event details, and send your order request. We will confirm availability and total details by phone/email/WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section" id="cart">
+      <div class="container">
+        <div class="section-head">
+          <h2>Your Cart</h2>
+          <p class="muted">Adjust quantities, then continue to checkout details.</p>
+        </div>
+
+        <div class="cart" data-cart></div>
+
+        <div class="cart-summary" data-cart-summary>
+          <div class="cart-totals">
+            <div class="total-row"><span>Subtotal</span><strong data-subtotal>€0.00</strong></div>
+            <div class="total-row"><span>Estimated delivery</span><strong data-delivery-fee>—</strong></div>
+            <div class="total-row grand"><span>Total</span><strong data-total>€0.00</strong></div>
+            <p class="note">Delivery fee is a placeholder and should be confirmed by location and order size.</p>
+          </div>
+          <div class="cart-actions">
+            <a class="btn btn-ghost" href="cakes.html">Add more items</a>
+            <button class="btn btn-danger" type="button" data-clear-cart>Clear cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="checkout">
+      <div class="container">
+        <div class="section-head">
+          <h2>Checkout Details</h2>
+          <p class="muted">Tell us your event date and delivery or pickup preferences.</p>
+        </div>
+
+        <form class="form" data-checkout-form>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" autocomplete="tel" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="eventDate">Event date</label>
+              <input id="eventDate" name="eventDate" type="date" required />
+            </div>
+
+            <fieldset class="field fieldset">
+              <legend>Fulfillment</legend>
+              <div class="radio-row">
+                <label class="radio"><input type="radio" name="fulfillment" value="pickup" checked /> Pickup</label>
+                <label class="radio"><input type="radio" name="fulfillment" value="delivery" /> Delivery</label>
+              </div>
+              <p class="hint">Pickup location and delivery availability will be confirmed after you submit.</p>
+            </fieldset>
+
+            <div class="field" data-delivery-address hidden>
+              <label for="address">Delivery address</label>
+              <input id="address" name="address" autocomplete="street-address" placeholder="Street, city" />
+            </div>
+
+            <div class="field" style="grid-column: 1 / -1;">
+              <label for="notes">Order notes (allergies, preferences)</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Example: less sugar, nut-free, message on cake..."></textarea>
+            </div>
+          </div>
+
+          <div class="panel payment">
+            <h3>Payment (integration placeholder)</h3>
+            <p class="muted">To accept card payments, connect Stripe/PayPal. For now this demo will generate an order summary you can send by email/WhatsApp.</p>
+            <div class="payment-buttons">
+              <button class="btn btn-primary" type="submit">Submit Order Request</button>
+              <button class="btn btn-ghost" type="button" data-copy-order>Copy Order Summary</button>
+            </div>
+            <p class="note">Submitting does not process payment in this demo.</p>
+          </div>
+
+          <div class="panel" data-order-result hidden>
+            <h3>Order request ready</h3>
+            <p class="muted">Use the summary below to send via email or WhatsApp.</p>
+            <pre class="summary" data-order-summary></pre>
+            <div class="row">
+              <a class="btn btn-ghost" href="#" data-send-whatsapp>Send via WhatsApp</a>
+              <a class="btn btn-ghost" href="mailto:hello@familybakerystudio.ee" data-send-email>Send via Email</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="custom">
+      <div class="container">
+        <div class="section-head">
+          <h2>Custom Cake Request</h2>
+          <p class="muted">Upload inspiration and tell us your size, flavors, and theme. We’ll reply with a quote.</p>
+        </div>
+
+        <form class="form" data-custom-form>
+          <div class="form-grid">
+            <div class="field">
+              <label for="cName">Name</label>
+              <input id="cName" name="name" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="cPhone">Phone</label>
+              <input id="cPhone" name="phone" autocomplete="tel" required />
+            </div>
+            <div class="field">
+              <label for="cEmail">Email</label>
+              <input id="cEmail" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="cDate">Event date</label>
+              <input id="cDate" name="eventDate" type="date" required />
+            </div>
+
+            <div class="field">
+              <label for="size">Size / servings</label>
+              <input id="size" name="size" placeholder="Example: 10–12 servings" required />
+            </div>
+            <div class="field">
+              <label for="flavor">Flavor preferences</label>
+              <input id="flavor" name="flavor" placeholder="Example: vanilla + berries" required />
+            </div>
+
+            <div class="field" style="grid-column: 1 / -1;">
+              <label for="details">Design details</label>
+              <textarea id="details" name="details" rows="5" placeholder="Theme, colors, text on cake, allergies..." required></textarea>
+            </div>
+
+            <div class="field" style="grid-column: 1 / -1;">
+              <label for="images">Inspiration image(s)</label>
+              <input id="images" name="images" type="file" accept="image/*" multiple />
+              <p class="hint">Images stay on your device in this demo. A developer can connect to email or storage for real uploads.</p>
+              <div class="upload-preview" data-upload-preview></div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="row">
+              <button class="btn btn-primary" type="submit">Generate Request Summary</button>
+              <button class="btn btn-ghost" type="button" data-copy-custom>Copy Request</button>
+            </div>
+            <pre class="summary" data-custom-summary></pre>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp" href="#" data-whatsapp aria-label="Contact us on WhatsApp">
+    <span aria-hidden="true">WhatsApp</span>
+  </a>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Family Bakery Studio</h3>
+        <p class="muted">Warm, professional, family-owned cakes and catering made fresh to order.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-list">
+          <li><a href="tel:+3720000000">+372 0000 000</a></li>
+          <li><a href="mailto:hello@familybakerystudio.ee">hello@familybakerystudio.ee</a></li>
+          <li class="muted">Tallinn, Estonia</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul class="footer-list">
+          <li>Mon–Fri: 10:00–18:00</li>
+          <li>Sat: 10:00–15:00</li>
+          <li>Sun: by pre-order</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <ul class="footer-list">
+          <li><a href="#" data-instagram>Instagram</a></li>
+          <li><a href="order.html" class="footer-order">Order Now</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small class="muted">© <span data-year></span> Family Bakery Studio. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/order.js"></script>
+</body>
+</html>

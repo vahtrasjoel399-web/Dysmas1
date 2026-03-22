@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" data-lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.title.platters">Catering Platters — Family Bakery Studio</title>
+  <meta name="description" content="Browse catering platters and dishes with prices and photos." data-i18n-attr="content" data-i18n="meta.desc.platters" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a.skip">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
+        <span class="brand-mark" aria-hidden="true">🍰</span>
+        <span class="brand-text">
+          <span class="brand-name" data-i18n="brand.name">Family Bakery Studio</span>
+          <span class="brand-tag" data-i18n="brand.tag">Cakes • Pastries • Catering</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only" data-i18n="nav.menu">Menu</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu" data-nav-menu>
+          <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+          <a href="cakes.html" class="nav-link" data-i18n="nav.cakes">Cakes</a>
+          <a href="pastries.html" class="nav-link" data-i18n="nav.pastries">Pastries & Snacks</a>
+          <a href="platters.html" class="nav-link is-active" data-i18n="nav.platters">Catering Platters</a>
+          <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-lang-btn data-lang-value="et">EST</button>
+          <button class="lang-btn" type="button" data-lang-btn data-lang-value="ru">RUS</button>
+          <button class="lang-btn" type="button" data-lang-btn data-lang-value="en">ENG</button>
+        </div>
+        <a class="btn btn-primary" href="#" data-call>
+          <span aria-hidden="true">📞</span>
+          <span data-i18n="cta.call">Call</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section class="page-hero">
+      <div class="container">
+        <h1 data-i18n="nav.platters">Catering Platters</h1>
+        <p class="lead" data-i18n="platters.lead">Platters and catering dishes with prices. To order, call or message.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="platters.section.catering">Catering & Meat Dishes</h2>
+          <p class="muted" data-i18n="platters.section.cateringDesc">Items priced per piece unless stated otherwise.</p>
+        </div>
+        <div class="toolbar">
+          <div class="search">
+            <label class="sr-only" for="search1" data-i18n="search.label">Search</label>
+            <input id="search1" type="search" placeholder="Search…" data-i18n-attr="placeholder" data-i18n="search.placeholder" data-search data-search-scope="catering" />
+          </div>
+          <div class="pill small" data-i18n="prices.eur">Prices in €</div>
+        </div>
+        <div class="grid cards" data-products data-category="catering"></div>
+
+        <div class="section-actions">
+          <a class="btn btn-primary" href="#" data-call data-i18n="cta.callNow">Call to order</a>
+          <a class="btn btn-ghost" href="#" data-whatsapp data-i18n="cta.whatsapp">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="platters.section.platters">Platters</h2>
+          <p class="muted" data-i18n="platters.section.plattersDesc">Platter prices are shown per kg where noted.</p>
+        </div>
+        <div class="toolbar">
+          <div class="search">
+            <label class="sr-only" for="search2" data-i18n="search.label">Search</label>
+            <input id="search2" type="search" placeholder="Search…" data-i18n-attr="placeholder" data-i18n="search.placeholder" data-search data-search-scope="platters" />
+          </div>
+          <div class="pill small" data-i18n="prices.eur">Prices in €</div>
+        </div>
+        <div class="grid cards" data-products data-category="platters"></div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp" href="#" data-whatsapp aria-label="Contact us on WhatsApp">
+    <span aria-hidden="true">WhatsApp</span>
+  </a>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 data-i18n="brand.name">Family Bakery Studio</h3>
+        <p class="muted" data-i18n="footer.about">Warm, trustworthy, family-owned cakes and catering made fresh to order.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <ul class="footer-list">
+          <li><a href="#" data-call>+372 0000 000</a></li>
+          <li><a href="mailto:hello@familybakerystudio.ee">hello@familybakerystudio.ee</a></li>
+          <li class="muted" data-i18n="footer.location">Tallinn, Estonia</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.hours">Hours</h4>
+        <ul class="footer-list">
+          <li data-i18n="footer.h1">Mon–Fri: 10:00–18:00</li>
+          <li data-i18n="footer.h2">Sat: 10:00–15:00</li>
+          <li data-i18n="footer.h3">Sun: by pre-order</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.social">Social</h4>
+        <ul class="footer-list">
+          <li><a href="#" data-instagram>Instagram</a></li>
+          <li><a href="#" data-whatsapp data-i18n="cta.whatsapp">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small class="muted">© <span data-year></span> <span data-i18n="brand.name">Family Bakery Studio</span></small>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/ui.js"></script>
+</body>
+</html>

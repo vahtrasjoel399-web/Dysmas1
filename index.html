@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" data-lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.title.home">Family Bakery Studio — Handmade Cakes & Catering</title>
+  <meta name="description" content="Handmade cakes, pastries, and catering platters for birthdays, Christmas, and celebrations." data-i18n-attr="content" data-i18n="meta.desc.home" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a.skip">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
+        <span class="brand-mark" aria-hidden="true">🍰</span>
+        <span class="brand-text">
+          <span class="brand-name" data-i18n="brand.name">Family Bakery Studio</span>
+          <span class="brand-tag" data-i18n="brand.tag">Cakes • Pastries • Catering</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only" data-i18n="nav.menu">Menu</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu" data-nav-menu>
+          <a href="index.html" class="nav-link is-active" data-i18n="nav.home">Home</a>
+          <a href="cakes.html" class="nav-link" data-i18n="nav.cakes">Cakes</a>
+          <a href="pastries.html" class="nav-link" data-i18n="nav.pastries">Pastries & Snacks</a>
+          <a href="platters.html" class="nav-link" data-i18n="nav.platters">Catering Platters</a>
+          <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-lang-btn data-lang-value="et">EST</button>
+          <button class="lang-btn" type="button" data-lang-btn data-lang-value="ru">RUS</button>
+          <button class="lang-btn" type="button" data-lang-btn data-lang-value="en">ENG</button>
+        </div>
+        <a class="btn btn-primary" href="#" data-call>
+          <span aria-hidden="true">📞</span>
+          <span data-i18n="cta.call">Call</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill" data-i18n="home.pill">Family owned • Handmade • Fresh to order</p>
+          <h1 data-i18n="home.headline">Handmade Cakes and Catering for Your Special Moments</h1>
+          <p class="lead" data-i18n="home.subheadline">Order fresh cakes, pastries, and party platters for birthdays, Christmas, and celebrations.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="contact.html" data-i18n="cta.contact">Contact / Order</a>
+            <a class="btn btn-ghost" href="#menu" data-i18n="cta.browse">Browse Menu</a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item">
+              <strong data-i18n="home.trust.1.t">Warm & friendly</strong>
+              <span data-i18n="home.trust.1.d">Professional family service</span>
+            </div>
+            <div class="trust-item">
+              <strong data-i18n="home.trust.2.t">Pickup or delivery</strong>
+              <span data-i18n="home.trust.2.d">Ask for availability</span>
+            </div>
+            <div class="trust-item">
+              <strong data-i18n="home.trust.3.t">Custom requests</strong>
+              <span data-i18n="home.trust.3.d">Tell us your idea</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-label="Food photography preview">
+          <div class="photo-grid">
+            <figure class="photo" style="--ph:url('https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=1200&q=70')">
+              <figcaption class="sr-only">Cake on a stand</figcaption>
+            </figure>
+            <figure class="photo" style="--ph:url('https://images.unsplash.com/photo-1542826438-1c3d11b1b6d5?auto=format&fit=crop&w=1200&q=70')">
+              <figcaption class="sr-only">Pastries on tray</figcaption>
+            </figure>
+            <figure class="photo" style="--ph:url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=70')">
+              <figcaption class="sr-only">Catering platter</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="home.menu.title">Menu</h2>
+          <p data-i18n="home.menu.desc">See what we make. For orders and questions, call or message.</p>
+        </div>
+
+        <div class="grid tiles">
+          <a class="tile" href="cakes.html" style="--img:url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1400&q=70')">
+            <div class="tile-body">
+              <h3 data-i18n="nav.cakes">Cakes</h3>
+              <p class="muted" data-i18n="home.tiles.cakes">Classic and celebration cakes</p>
+            </div>
+          </a>
+          <a class="tile" href="pastries.html" style="--img:url('https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1400&q=70')">
+            <div class="tile-body">
+              <h3 data-i18n="nav.pastries">Pastries & Snacks</h3>
+              <p class="muted" data-i18n="home.tiles.pastries">Perfect for coffee breaks & parties</p>
+            </div>
+          </a>
+          <a class="tile" href="platters.html" style="--img:url('https://images.unsplash.com/photo-1543332164-6e82f355bad4?auto=format&fit=crop&w=1400&q=70')">
+            <div class="tile-body">
+              <h3 data-i18n="nav.platters">Catering Platters</h3>
+              <p class="muted" data-i18n="home.tiles.platters">Platters and catering dishes</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="section-actions">
+          <a class="btn btn-primary" href="#" data-call data-i18n="cta.callNow">Call to order</a>
+          <a class="btn btn-ghost" href="#" data-whatsapp data-i18n="cta.whatsapp">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="home.reviews.title">Reviews</h2>
+          <p data-i18n="home.reviews.desc">Warm words from happy customers.</p>
+        </div>
+
+        <div class="grid reviews">
+          <article class="review">
+            <p class="review-text" data-i18n="reviews.1">“Beautiful presentation and so fresh. The cake was the highlight of our birthday party.”</p>
+            <p class="review-meta"><strong>Maria</strong> • Tallinn</p>
+          </article>
+          <article class="review">
+            <p class="review-text" data-i18n="reviews.2">“Friendly service, easy pickup, and the pastries disappeared in minutes.”</p>
+            <p class="review-meta"><strong>Kristjan</strong> • Viimsi</p>
+          </article>
+          <article class="review">
+            <p class="review-text" data-i18n="reviews.3">“We ordered platters for a family gathering—everything looked elegant and tasted amazing.”</p>
+            <p class="review-meta"><strong>Elina</strong> • Tartu</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2 data-i18n="home.banner.title">Ready to order?</h2>
+            <p data-i18n="home.banner.desc">Call us or message on WhatsApp — we’ll confirm details and timing.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="#" data-call data-i18n="cta.callNow">Call to order</a>
+            <a class="btn btn-ghost" href="contact.html" data-i18n="cta.contact">Contact / Order</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp" href="#" data-whatsapp aria-label="Contact us on WhatsApp">
+    <span aria-hidden="true">WhatsApp</span>
+  </a>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 data-i18n="brand.name">Family Bakery Studio</h3>
+        <p class="muted" data-i18n="footer.about">Warm, trustworthy, family-owned cakes and catering made fresh to order.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <ul class="footer-list">
+          <li><a href="#" data-call>+372 0000 000</a></li>
+          <li><a href="mailto:hello@familybakerystudio.ee">hello@familybakerystudio.ee</a></li>
+          <li class="muted" data-i18n="footer.location">Tallinn, Estonia</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.hours">Hours</h4>
+        <ul class="footer-list">
+          <li data-i18n="footer.h1">Mon–Fri: 10:00–18:00</li>
+          <li data-i18n="footer.h2">Sat: 10:00–15:00</li>
+          <li data-i18n="footer.h3">Sun: by pre-order</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.social">Social</h4>
+        <ul class="footer-list">
+          <li><a href="#" data-instagram>Instagram</a></li>
+          <li><a href="#" data-whatsapp data-i18n="cta.whatsapp">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small class="muted">© <span data-year></span> <span data-i18n="brand.name">Family Bakery Studio</span></small>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/ui.js"></script>
+</body>
+</html>
